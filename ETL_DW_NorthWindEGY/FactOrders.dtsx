@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="FactOrders"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{73CDC07B-07C2-479D-B37E-03986E3CB923}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{68454632-7F75-475E-8F68-5F7F6FBB5A36}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -47,11 +47,11 @@
           version="1">
           <components>
             <component
-              refId="Package\DFT_FactOrders\Destination_Fact"
+              refId="Package\DFT_FactOrders\Destination_FactOrders"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="Destination_Fact"
+              name="Destination_FactOrders"
               usesDispositions="true"
               version="4">
               <properties>
@@ -104,7 +104,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT_FactOrders\Destination_Fact.Connections[OleDbConnection]"
+                  refId="Package\DFT_FactOrders\Destination_FactOrders.Connections[OleDbConnection]"
                   connectionManagerID="{472A61BE-A9C5-4C74-B52D-1ECC7516B80E}:external"
                   connectionManagerRefId="Project.ConnectionManagers[LocalHost.DW Northwind Egy]"
                   description="The OLE DB runtime connection used to access the database."
@@ -112,141 +112,141 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input]"
+                  refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].Columns[Shipping]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].Columns[Shipping]"
                       cachedDataType="bool"
                       cachedName="Shipping"
-                      externalMetadataColumnId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[Shipping]"
+                      externalMetadataColumnId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[Shipping]"
                       lineageId="Package\DFT_FactOrders\Source_Orders.Outputs[OLE DB Source Output].Columns[Shipping]" />
                     <inputColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].Columns[Delivery]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].Columns[Delivery]"
                       cachedDataType="bool"
                       cachedName="Delivery"
-                      externalMetadataColumnId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[Delivery]"
+                      externalMetadataColumnId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[Delivery]"
                       lineageId="Package\DFT_FactOrders\Source_Orders.Outputs[OLE DB Source Output].Columns[Delivery]" />
                     <inputColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].Columns[IsReturned]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].Columns[IsReturned]"
                       cachedDataType="bool"
                       cachedName="IsReturned"
-                      externalMetadataColumnId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[IsReturned]"
+                      externalMetadataColumnId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[IsReturned]"
                       lineageId="Package\DFT_FactOrders\Source_Orders.Outputs[OLE DB Source Output].Columns[IsReturned]" />
                     <inputColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].Columns[freight]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].Columns[freight]"
                       cachedDataType="r4"
                       cachedName="freight"
-                      externalMetadataColumnId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[freight]"
+                      externalMetadataColumnId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[freight]"
                       lineageId="Package\DFT_FactOrders\Source_Orders.Outputs[OLE DB Source Output].Columns[freight]" />
                     <inputColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].Columns[order_id]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].Columns[order_id]"
                       cachedDataType="i4"
                       cachedName="order_id"
-                      externalMetadataColumnId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[Order_id_BK]"
+                      externalMetadataColumnId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[Order_id_BK]"
                       lineageId="Package\DFT_FactOrders\Source_Orders.Outputs[OLE DB Source Output].Columns[order_id]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[Sales_SK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[Sales_SK]"
                       dataType="i4"
                       name="Sales_SK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[Order_id_BK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[Order_id_BK]"
                       dataType="i4"
                       name="Order_id_BK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[shipname]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[shipname]"
                       codePage="1252"
                       dataType="str"
                       length="40"
                       name="shipname" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[ShipperSK_FK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[ShipperSK_FK]"
                       dataType="i4"
                       name="ShipperSK_FK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[Shipper_ADD_id_FK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[Shipper_ADD_id_FK]"
                       dataType="i4"
                       name="Shipper_ADD_id_FK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[ProductSK_FK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[ProductSK_FK]"
                       dataType="i4"
                       name="ProductSK_FK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[SupplierSK_FK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[SupplierSK_FK]"
                       dataType="i4"
                       name="SupplierSK_FK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[Supplier_ADD_id_FK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[Supplier_ADD_id_FK]"
                       dataType="i4"
                       name="Supplier_ADD_id_FK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeSK_FK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeSK_FK]"
                       dataType="i4"
                       name="EmployeeSK_FK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[Employee_ADD_id_FK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[Employee_ADD_id_FK]"
                       dataType="i4"
                       name="Employee_ADD_id_FK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[CustomerSK_FK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[CustomerSK_FK]"
                       dataType="i4"
                       name="CustomerSK_FK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[Customer_ADD_id_FK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[Customer_ADD_id_FK]"
                       dataType="i4"
                       name="Customer_ADD_id_FK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[OrderDate_FK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[OrderDate_FK]"
                       dataType="i4"
                       name="OrderDate_FK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[ShippedDate_FK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[ShippedDate_FK]"
                       dataType="i4"
                       name="ShippedDate_FK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[RequiredDate_FK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[RequiredDate_FK]"
                       dataType="i4"
                       name="RequiredDate_FK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[ReturnDate_FK]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[ReturnDate_FK]"
                       dataType="i4"
                       name="ReturnDate_FK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[quantity]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[quantity]"
                       dataType="i4"
                       name="quantity" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[dicount]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[dicount]"
                       dataType="r4"
                       name="dicount" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[freight]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[freight]"
                       dataType="r4"
                       name="freight" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[order_price]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[order_price]"
                       dataType="r4"
                       name="order_price" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[total_amount]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[total_amount]"
                       dataType="r4"
                       name="total_amount" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[Delivery]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[Delivery]"
                       dataType="bool"
                       name="Delivery" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[Shipping]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[Shipping]"
                       dataType="bool"
                       name="Shipping" />
                     <externalMetadataColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input].ExternalColumns[IsReturned]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input].ExternalColumns[IsReturned]"
                       dataType="bool"
                       name="IsReturned" />
                   </externalMetadataColumns>
@@ -254,22 +254,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT_FactOrders\Destination_Fact.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\DFT_FactOrders\Destination_FactOrders.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT_FactOrders\Destination_Fact.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\DFT_FactOrders\Destination_FactOrders.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT_FactOrders\Destination_Fact.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\DFT_FactOrders\Destination_FactOrders.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT_FactOrders\Destination_Fact.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\DFT_FactOrders\Destination_FactOrders.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -531,7 +531,7 @@
           <paths>
             <path
               refId="Package\DFT_FactOrders.Paths[OLE DB Source Output]"
-              endId="Package\DFT_FactOrders\Destination_Fact.Inputs[OLE DB Destination Input]"
+              endId="Package\DFT_FactOrders\Destination_FactOrders.Inputs[OLE DB Destination Input]"
               name="OLE DB Source Output"
               startId="Package\DFT_FactOrders\Source_Orders.Outputs[OLE DB Source Output]" />
           </paths>
@@ -562,13 +562,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="154.4,41.6"
-          Id="Package\DFT_FactOrders"
-          TopLeft="226.428571910578,88.705882275187" />
-        <NodeLayout
           Size="150.4,41.6"
           Id="Package\Data Flow Task"
           TopLeft="230.00000048961,159.823529271673" />
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\DFT_FactOrders"
+          TopLeft="226.428571910578,88.705882275187" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="304.414286200094,130.305882275187">
@@ -604,23 +604,35 @@
           Id="Package\DFT_FactOrders\Source_Orders"
           TopLeft="205.714286152197,32.8823529123538" />
         <NodeLayout
-          Size="156.8,41.6"
-          Id="Package\DFT_FactOrders\Destination_Fact"
+          Size="188,41.6"
+          Id="Package\DFT_FactOrders\Destination_FactOrders"
           TopLeft="195.054945470166,219.384615191777" />
         <EdgeLayout
           Id="Package\DFT_FactOrders.Paths[OLE DB Source Output]"
-          TopLeft="276.584615811181,74.4823529123538">
+          TopLeft="279.714286152197,74.4823529123538">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,144.902262279423"
+              EndConnector="9.34065931796897,144.902262279423"
               Start="0,0"
-              End="0,137.402262279423">
+              End="9.34065931796897,137.402262279423">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,137.402262279423" />
+                    End="0,68.4511311397116" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,68.4511311397116"
+                    Point2="0,72.4511311397116"
+                    Point3="4,72.4511311397116" />
+                  <mssgle:LineSegment
+                    End="5.34065931796897,72.4511311397116" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.34065931796897,72.4511311397116"
+                    Point2="9.34065931796897,72.4511311397116"
+                    Point3="9.34065931796897,76.4511311397116" />
+                  <mssgle:LineSegment
+                    End="9.34065931796897,137.402262279423" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -633,7 +645,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_FactOrders\Source_Orders">
+    design-time-name="Package\DFT_FactOrders\Destination_FactOrders">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -646,7 +658,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_FactOrders\Destination_Fact">
+    design-time-name="Package\DFT_FactOrders\Source_Orders">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
