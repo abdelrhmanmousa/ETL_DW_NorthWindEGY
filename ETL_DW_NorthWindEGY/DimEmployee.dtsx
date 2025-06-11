@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{71D14245-5255-4AA7-9DC0-8F517985B310}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{64F13022-5320-4E97-9BF7-260FCF77924D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -410,12 +410,6 @@
                       cachedName="region_description"
                       externalMetadataColumnId="Package\DFT_DimEmployee\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[region_description]"
                       lineageId="Package\DFT_DimEmployee\Union All.Outputs[Union All Output 1].Columns[region_description]" />
-                    <inputColumn
-                      refId="Package\DFT_DimEmployee\Insert Destination.Inputs[OLE DB Destination Input].Columns[StartDate]"
-                      cachedDataType="dbDate"
-                      cachedName="StartDate"
-                      externalMetadataColumnId="Package\DFT_DimEmployee\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartDate]"
-                      lineageId="Package\DFT_DimEmployee\Derived Column 1.Outputs[Derived Column Output].Columns[StartDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2317,7 +2311,9 @@ on r.region_id =  t.region_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-8,18.25,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
@@ -2475,6 +2471,19 @@ on r.region_id =  t.region_id</property>
   &lt;DateVariable&gt;System::StartTime&lt;/DateVariable&gt;
   &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
 &lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_DimEmployee\Insert Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
