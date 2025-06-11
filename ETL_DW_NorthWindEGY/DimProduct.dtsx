@@ -11,10 +11,24 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{D616FEE7-58AE-4F12-BBE8-4049F45B7725}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{A9DAAC2C-50DB-4817-B951-E050995A8E7E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.Co]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{4495CE4B-4E95-4581-ABA5-C5F519232EB6}"
+      DTS:ObjectName="LocalHost.Co">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=Co;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{4495CE4B-4E95-4581-ABA5-C5F519232EB6}LocalHost.Co;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -1487,7 +1501,7 @@ on c.category_id = p.category_id</property>
         <NodeLayout
           Size="157.6,41.6"
           Id="Package\DFT_DimProduct"
-          TopLeft="324.285714976033,113.941176370714" />
+          TopLeft="77.8571430228798,56.5882352445155" />
       </GraphLayout>
     </LayoutInfo>
   </Package>

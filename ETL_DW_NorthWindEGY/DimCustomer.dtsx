@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{33867A62-5B6A-4D76-ADA1-5BE1CC1F9C9A}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{1147B16F-C969-45A5-A180-B7F8B1614F13}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -825,6 +825,14 @@
           Size="208,41.6"
           Id="Package\Data Flow Task\Slowly Changing Dimension"
           TopLeft="206.7,107.1" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Data Flow Task\OLE DB Command"
+          TopLeft="391.157143203823,203.347058828221" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Data Flow Task\Insert Destination"
+          TopLeft="157.642857466729,279.817646996486" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
           TopLeft="310.7,47.1">
@@ -847,10 +855,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Data Flow Task\Insert Destination"
-          TopLeft="157.642857466729,279.817646996486" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[New Output]"
           TopLeft="277.366666666667,148.7">
@@ -887,10 +891,6 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Data Flow Task\OLE DB Command"
-          TopLeft="391.157143203823,203.347058828221" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Changing Attribute Updates Output]"
           TopLeft="344.033333333333,148.7">
