@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LocalHost.DW Northwind Egy"
+  DTS:DTSID="{472A61BE-A9C5-4C74-B52D-1ECC7516B80E}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=.;Initial Catalog=DW Northwind Egy;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-ETL_DW_NorthWindEGY-{472A61BE-A9C5-4C74-B52D-1ECC7516B80E}LocalHost.DW Northwind Egy;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
