@@ -13,6 +13,8 @@
   DTS:PackageType="5"
   DTS:VersionBuild="11"
   DTS:VersionGUID="{CFAC2F17-314C-4B0E-A51C-E8D6945F5E3A}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{64F13022-5320-4E97-9BF7-260FCF77924D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -2325,7 +2327,9 @@ on r.region_id =  t.region_id</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-8,18.25,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2492,6 +2496,19 @@ on r.region_id =  t.region_id</property>
   &lt;DateVariable&gt;System::StartTime&lt;/DateVariable&gt;
   &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
 &lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_DimEmployee\Insert Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
